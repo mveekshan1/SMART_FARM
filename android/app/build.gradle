@@ -1,0 +1,48 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace "com.example.yourapp" // Replace with your app's package name
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.example.yourapp" // Replace with your app's package name
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 1 // Replace with your version code
+        versionName "1.0" // Replace with your version name
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false // Set to true to enable code minification
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+}
+
+// Dependencies
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10" // Ensure this matches your Kotlin version
+    implementation 'androidx.multidex:multidex:2.0.1' // Use androidx for multidex support
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.firebase:firebase-analytics'
+}

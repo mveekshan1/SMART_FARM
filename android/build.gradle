@@ -1,0 +1,31 @@
+buildscript {
+    ext.kotlin_version = '1.6.10' // Define the Kotlin version here
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:7.3.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version" // Add Kotlin Gradle plugin
+        classpath 'com.google.gms:google-services:4.3.13'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = '../build'
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(':app') // Ensure that the ':app' module exists
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
