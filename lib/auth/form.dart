@@ -19,6 +19,7 @@ XFile? image;
 
 class FormView extends StatefulWidget {
   final int roleid;
+  // ignore: use_super_parameters
   const FormView({
     Key? key,
     required this.roleid,

@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, invalid_use_of_protected_member, avoid_unnecessary_containers
+// ignore_for_file: unused_import, invalid_use_of_protected_member, avoid_unnecessary_containers, use_super_parameters, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter_octicons/flutter_octicons.dart';

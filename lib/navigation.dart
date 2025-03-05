@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, non_constant_identifier_names
+// ignore_for_file: unused_import, non_constant_identifier_names, use_super_parameters, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:flutter_octicons/flutter_octicons.dart';

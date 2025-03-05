@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, unused_field, sort_child_properties_last
+// ignore_for_file: unused_import, unused_field, sort_child_properties_last, use_super_parameters
 
 import 'dart:io';
 import 'package:flutter/material.dart';

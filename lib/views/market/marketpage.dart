@@ -11,6 +11,7 @@ import 'package:flutter_carousel_widget/flutter_carousel_widget.dart';
 import 'package:line_icons/line_icons.dart';
 
 class ProductListing extends StatefulWidget {
+  // ignore: use_super_parameters
   const ProductListing({Key? key}) : super(key: key);
 
   @override
@@ -167,12 +168,14 @@ class _ProductListingState extends State<ProductListing> {
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
                               border: Border.all(
+                                // ignore: deprecated_member_use
                                 color: Colors.grey.withOpacity(0.5),
                                 width: 1,
                               ),
                               color: Colors.white,
                               boxShadow: [
                                 BoxShadow(
+                                  // ignore: deprecated_member_use
                                   color: Colors.grey.withOpacity(0.5),
                                   blurRadius: 1,
                                   offset: const Offset(0, 3),

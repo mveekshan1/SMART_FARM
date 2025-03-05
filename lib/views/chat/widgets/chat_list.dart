@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, depend_on_referenced_packages
+// ignore_for_file: unused_import, depend_on_referenced_packages, use_super_parameters
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:frontend/views/chat/controller/chat_controller.dart';

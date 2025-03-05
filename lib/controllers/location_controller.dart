@@ -75,6 +75,7 @@ class LocationController extends GetxController {
 
     try {
       _currentPosition = await Geolocator.getCurrentPosition(
+          // ignore: deprecated_member_use
           desiredAccuracy: LocationAccuracy.high);
       position = _currentPosition!;
       print(position);

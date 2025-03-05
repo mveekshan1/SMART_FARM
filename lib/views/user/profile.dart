@@ -31,7 +31,7 @@
 //   }
 // }
 
-// ignore_for_file: unused_import, use_build_context_synchronously, unused_element
+// ignore_for_file: unused_import, use_build_context_synchronously, unused_element, use_super_parameters
 
 import 'package:flutter/material.dart';
 import 'package:frontend/common/jobs_card.dart';

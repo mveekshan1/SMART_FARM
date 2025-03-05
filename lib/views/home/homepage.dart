@@ -1,4 +1,4 @@
-// ignore_for_file: unused_import, avoid_unnecessary_containers
+// ignore_for_file: unused_import, avoid_unnecessary_containers, deprecated_member_use
 
 import 'package:flutter/material.dart';
 import 'package:frontend/controllers/commodity_controller.dart';
